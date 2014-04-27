@@ -28,7 +28,13 @@ MainWindow::~MainWindow()
 
 void MainWindow::open()
 {
-    QDialog dialog;
-    dialog.setWindowTitle(tr("Hello, dialog!"));
-    dialog.exec();
+//    QDialog dialog;
+//    QDialog dialog(this);
+    QDialog *dialog = new QDialog;
+    dialog->setWindowTitle(tr("Hello, dialog!"));
+    dialog->exec(); // exec()是非模态对话框
+//    dialog->show(); // show()是模态对话框
+//    dialog.setWindowTitle(tr("Hello, dialog!"));
+//    dialog.show();
+//    dialog.exec();
 }
