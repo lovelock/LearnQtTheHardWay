@@ -1,0 +1,4 @@
+#ifndef USERAGEDIALOG_H
+#define USERAGEDIALOG_H
+
+#endif // USERAGEDIALOG_H
